@@ -1,0 +1,32 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+// TABEL UNTUK MENYIMPAN BARANG JUALAN
+model Product {
+  id          Int      @id @default(autoincrement())
+  name        String
+  price       Float
+  description String
+  category    String
+  size        String?
+  condition   String
+  photo_url   String?
+  reward      Float
+  createdAt   DateTime @default(now())
+}
+
+// TABEL UNTUK MENYIMPAN RIWAYAT CASHOUT (NYATA)
+model Transaction {
+  id        Int      @id @default(autoincrement())
+  amount    Float
+  method    String   // DANA, GOPAY, OVO, BANK
+  account   String   // Nomor HP atau Rekening
+  status    String   @default("PENDING") // PENDING, SUCCESS
+  createdAt DateTime @default(now()) // Tanggal Nyata Otomatis
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ThriftChain adalah aplikasi loyalitas berbasis Solana untuk belanja fashion bekas di Indonesia, dengan token $THRIFT, cashback SOL, dan rekomendasi AI." />
+  <title>ThriftChain | Rantai Toko Barang Bekas</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <div>
+        <a class="brand" href="#home">
+          <img src="public/logo.svg" alt="ThriftChain" style="height: 40px; width: auto; margin-right: 10px;">
+          ThriftChain
+        </a>
+        <p class="tagline">Loyalitas fashion bekas di jaringan Solana.</p>
+      </div>
+      <button class="nav-toggle" aria-label="Buka menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-links">
+        <a href="#about">Tentang</a>
+        <a href="#fitur">Fitur</a>
+        <a href="#teknologi">Teknologi</a>
+        <a href="#manfaat">Manfaat</a>
+        <a href="#cta">Gabung</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Aplikasi Konsumen | dApp Mobile</p>
+          <h1>Belanja fashion bekas jadi lebih menguntungkan dengan <span>$THRIFT</span>.</h1>
+          <p>ThriftChain mengubah setiap pembelian dan penjualan pakaian bekas menjadi token loyalitas Solana yang bisa ditukar menjadi diskon, cashback SOL, atau saldo Rupiah.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#fitur">Pelajari Lebih Lanjut</a>
+            <a class="btn btn-secondary" href="#about">Tentang Kami</a>
+            <button id="walletButton" class="btn btn-primary">Hubungkan Dompet</button>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-inner">
+            <p class="hero-card-label">Dompet</p>
+            <h2 id="walletStatus">Belum terkoneksi</h2>
+            <p id="walletAddress">Klik “Hubungkan Dompet” untuk memulai dengan Phantom Wallet.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section-light">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Apa yang Dibangun</p>
+          <h2>Platform loyalitas belanja barang bekas khusus Indonesia.</h2>
+        </div>
+        <div class="content-grid">
+          <div>
+            <p>ThriftChain dirancang untuk komunitas fashion bekas yang ingin mendapatkan nilai ekonomi nyata dari aktivitas belanja mereka. Semua transaksi dikomputerisasi dalam jaringan Solana, sehingga token $THRIFT menjadi hadiah cepat, murah, dan dapat ditukar.</p>
+          </div>
+          <div>
+            <ul class="feature-list">
+              <li><strong>Token $THRIFT</strong> sebagai insentif loyalitas.</li>
+              <li><strong>AI rekomendasi produk</strong> berbasis Python untuk hasil lebih relevan.</li>
+              <li><strong>Dompet tersemat otomatis</strong> via Privy SDK untuk pengguna Web2.</li>
+              <li><strong>Cashback SOL</strong> dan konversi ke saldo Rupiah.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="fitur" class="section-dark">
+      <div class="container">
+        <div class="section-header light">
+          <p class="eyebrow">Fitur Utama</p>
+          <h2>Menghubungkan belanja bekas dengan nilai ekonomi nyata.</h2>
+        </div>
+        <div class="cards-grid">
+          <article class="card">
+            <h3>Token Loyalitas $THRIFT</h3>
+            <p>Dapatkan token untuk setiap aktivitas jual beli dan tukarkan dengan penawaran eksklusif atau saldo Rupiah.</p>
+          </article>
+          <article class="card">
+            <h3>Onboarding Sosial</h3>
+            <p>Login mudah lewat Email, Google, atau TikTok ditambah dompet otomatis untuk adopsi massal.</p>
+          </article>
+          <article class="card">
+            <h3>Rekomendasi AI</h3>
+            <p>AI Python memberikan rekomendasi fashion bekas yang relevan dan sesuai preferensi pengguna.</p>
+          </article>
+          <article class="card">
+            <h3>Ekosistem Ramah Lingkungan</h3>
+            <p>Menginspirasi gaya hidup circular economy dan mengurangi jejak industri mode.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="teknologi" class="section-light">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Teknologi</p>
+          <h2>Solana, Anchor, dan AI Python menjadi fondasi kami.</h2>
+        </div>
+        <div class="tech-grid">
+          <div class="tech-card">
+            <h3>Solana & Anchor</h3>
+            <p>Kontrak pintar cepat dan biaya rendah memakai standar SPL untuk token loyalitas.</p>
+          </div>
+          <div class="tech-card">
+            <h3>Privy SDK</h3>
+            <p>Login sosial dengan Google, TikTok, atau email, plus dompet tersemat untuk pengguna Web2.</p>
+          </div>
+          <div class="tech-card">
+            <h3>Python AI</h3>
+            <p>Scikit-learn, Pandas, dan Hugging Face untuk rekomendasi produk yang dipersonalisasi.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="manfaat" class="section-dark">
+      <div class="container">
+        <div class="section-header light">
+          <p class="eyebrow">Mengapa Sekarang</p>
+          <h2>Pasar resale berkembang pesat, dan momen ini sangat tepat.</h2>
+        </div>
+        <div class="content-grid">
+          <div>
+            <p>ThriftChain menjawab kebutuhan 64% Gen Z Indonesia yang aktif berbelanja bekas. Dengan pasar global yang diproyeksikan tumbuh sangat cepat, kami menghadirkan solusi loyalitas yang memberikan nilai finansial langsung dan mendukung sustainability.</p>
+          </div>
+          <div class="stats-panel">
+            <div class="stat-item">
+              <p class="stat-value">64%</p>
+              <p class="stat-label">Gen Z Indonesia beli barang bekas</p>
+            </div>
+            <div class="stat-item">
+              <p class="stat-value">$249B → $393B</p>
+              <p class="stat-label">Proyeksi pasar resale global 2026–2030</p>
+            </div>
+            <div class="stat-item">
+              <p class="stat-value">10%</p>
+              <p class="stat-label">Emisi global mode yang bisa dikurangi</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cta" class="section-light cta-section">
+      <div class="container cta-grid">
+        <div>
+          <p class="eyebrow">Siap bergabung?</p>
+          <h2>Mulai perjalanan fashion bekas yang lebih bernilai dengan ThriftChain.</h2>
+          <p>Daftar sekarang untuk menjadi bagian dari aplikasi loyalitas yang memadukan blockchain Solana, AI rekomendasi, dan cashback nyata dalam Rupiah.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-primary" href="#home">Bergabung Sekarang</a>
+          <a class="btn btn-secondary" href="#teknologi">Lihat Teknologi</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>&copy; 2026 ThriftChain. Semua hak cipta dilindungi.</p>
+      <p>Solana + AI + Fashion Bekas</p>
+    </div>
+  </footer>
+</body>
+</html>
